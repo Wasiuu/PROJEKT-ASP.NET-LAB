@@ -53,8 +53,8 @@ namespace Data
             };
             PasswordHasher<IdentityUser> passwordHasher = new PasswordHasher<IdentityUser>();
 
-            admin.PasswordHash = passwordHasher.HashPassword(admin, "1234Abcd!");
-            user.PasswordHash = passwordHasher.HashPassword(user, "1234Abcd!");
+            admin.PasswordHash = passwordHasher.HashPassword(admin, "1234Aaaa!");
+            user.PasswordHash = passwordHasher.HashPassword(user, "1234Bbbb!");
 
             modelBuilder.Entity<IdentityUser>().HasData(admin);
             modelBuilder.Entity<IdentityUser>().HasData(user);
