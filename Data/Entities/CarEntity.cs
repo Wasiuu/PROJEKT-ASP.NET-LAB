@@ -21,7 +21,7 @@ public class CarEntity
     public double? EngineCapacity { get; set; }
     [Required]
     public int Power { get; set; }
-    [Required]
+    
     public string EngineType { get; set; }
     [Required]
     
