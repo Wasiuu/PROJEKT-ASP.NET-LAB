@@ -1,0 +1,19 @@
+﻿@model Car
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Czy napewno chcesz usunąć samochód? </h1>
+<br />
+<p>Nazwa samochodu:</p>
+<h3>@Model.Model</h3>
+<br />
+<p>Numer rejestracyjny:</p>
+<h3>@Model.RegistrationNumber</h3>
+<br />
+<form asp-controller="Car" asp-action="Delete">
+    <button class="btn btn-danger" type="submit">Tak</button>
+    <a class="btn btn-outline-primary" asp-action="Index">Nie</a>
+</form>

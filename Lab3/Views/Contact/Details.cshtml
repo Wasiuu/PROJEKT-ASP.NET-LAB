@@ -1,0 +1,25 @@
+﻿@model Contact
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Szczegóły</h1>
+<br />
+<div style="padding: 20px; background-color: #578CB5;
+               border-radius: 25px; box-shadow: 0 0 15px;
+               "
+
+<h5>Imię: @Model.Name</h5>
+<h5>Email: @Model.Email</h5>
+<h5>Numer telefonu: @Model.Phone</h5>
+<h5 class="">Data urodzenia: @Model.Birth</h5>
+<h5 class="">Priorytet: @Model.Priority.GetDisplayName()</h5>
+<h5 class="">Czas utworzenia: @Model.Created</h5>
+
+</div>
+
+<br />
+<a class="btn btn-outline-primary" asp-action="Index">Powrót</a>
+
