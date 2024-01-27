@@ -17,7 +17,7 @@ namespace Lab3.Models
         public string Model { get; set; }
 
         [StringLength(maximumLength: 50)]
-        [Display(Name = "Producent")]
+        [Display(Name = "Producents")]
         public string Manufacturer { get; set; }
         
         [Display(Name = "Pojemność silnika")]
